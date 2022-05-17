@@ -32,14 +32,6 @@
 
 (function () {
 
-//替换<s>标签效果为下划线
-
-GM_addStyle('s {text-decoration: underline}');
-
-//令Decoration样式为下划线
-
-document.querySelectorAll('del').forEach(e => e.style.textDecoration = 'underline');
-
 //删除"你知道的太多了"标签
 
 document.querySelectorAll('.heimu').forEach(e => e.title = '');
